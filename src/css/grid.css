@@ -1,0 +1,44 @@
+.hero__container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 258px;
+  gap: 24px 30px;
+}
+.hero__left-block {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+.hero__right-top-block {
+  grid-column: span 2;
+}
+
+.about__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.projects__list {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-auto-flow: dense;
+  gap: 30px;
+}
+.projects__list-item {
+  grid-column: span 2;
+}
+.projects__list-item_big {
+  grid-column: span 6;
+}
+.projects__list-item_middle {
+  grid-column: span 3;
+}
+
+.contacts__container {
+  display: grid;
+  grid-template-columns: 1fr 410px;
+  gap: 25px 30px;
+}
+.contacts__title {
+  grid-column: span 2;
+}/*# sourceMappingURL=grid.css.map */
