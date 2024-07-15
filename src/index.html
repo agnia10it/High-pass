@@ -16,6 +16,11 @@
         <img class="header__logo-img" src="img/logo.svg" alt="Логотип компании High pass">
       </a>
       <nav class="header__nav nav">
+        <a class="header__burger" href="#" aria-label="Открыть меню сайта">
+          <svg class="header__burger-img" width="20" height="18">
+            <use href="img/sprite.svg#burger"></use>
+          </svg>
+        </a>
         <ul class="nav__list">
           <li class="nav__item"><a class="nav__link" href="#about">О&nbsp;студии</a></li>
           <li class="nav__item"><a class="nav__link" href="#projects">Наши проекты</a></li>
@@ -24,7 +29,7 @@
           <li class="nav__item"><a class="nav__link" href="#contacts">Контакты</a></li>
         </ul>
       </nav>
-      <a class="header__search search" href="#">
+      <a class="header__search search" href="#" aria-label="Открыть строку поиска">
         <svg class="search__img" width="25" height="25">
           <use href="img/sprite.svg#search"></use>
         </svg>
@@ -44,19 +49,32 @@
         <div class="hero__right-top-block">
           <h2 class="title hero__title">Работы участников предыдущего мастер-класса</h2>
           <picture class="hero__img hero__img_top">
-            <source srcset="img/hero-1d.jpg" media="(max-width: 1920px)">
-            <img src="img/hero-1d.jpg" alt="Работа участника предыдущего мастер-класса">
+            <source srcset="img/hero/hero-1-m.jpg" media="(max-width: 479px)">
+            <source srcset="img/hero/hero-1-t.jpg" media="(max-width: 992px)">
+            <source srcset="img/hero/hero-1-lp.jpg" media="(max-width: 1200px)">
+            <source srcset="img/hero/hero-1-d.jpg" media="(max-width: 1920px)">
+            <source srcset="img/hero/hero-1-2x.jpg" media="(min-width: 1921px)">
+            <img src="img/hero/hero-1-d.jpg" alt="Работа участника предыдущего мастер-класса">
           </picture>
         </div>
-          <picture class="hero__img">
-            <source srcset="img/hero-2d.jpg" media="(max-width: 1920px)">
-            <img src="img/hero-2d.jpg" alt="Работа участника предыдущего мастер-класса">
-          </picture>
-          <picture class="hero__img">
-            <source srcset="img/hero-3d.jpg" media="(max-width: 1920px)">
-            <img src="img/hero-3d.jpg" alt="Работа участника предыдущего мастер-класса">
-          </picture>
-        </div>
+        <picture class="hero__img">
+          <source srcset="img/hero/hero-2-m.jpg" media="(max-width: 479px)">
+          <source srcset="img/hero/hero-2-t.jpg" media="(max-width: 992px)">
+          <source srcset="img/hero/hero-2-lp.jpg" media="(max-width: 1200px)">
+          <source srcset="img/hero/hero-2-d.jpg" media="(max-width: 1920px)">
+          <source srcset="img/hero/hero-2-2x.jpg" media="(min-width: 1921px)">
+          <img src="img/hero/hero-2-d.jpg" alt="Работа участника предыдущего мастер-класса">
+        </picture>
+
+        <picture class="hero__img">
+          <source srcset="img/hero/hero-3-m.jpg" media="(max-width: 479px)">
+          <source srcset="img/hero/hero-3-t.jpg" media="(max-width: 992px)">
+          <source srcset="img/hero/hero-3-lp.jpg" media="(max-width: 1200px)">
+          <source srcset="img/hero/hero-3-d.jpg" media="(max-width: 1920px)">
+          <source srcset="img/hero/hero-3-2x.jpg" media="(min-width: 1921px)">
+          <img src="img/hero/hero-3-d.jpg" alt="Работа участника предыдущего мастер-класса">
+        </picture>
+      </div>
     </section>
 
     <section class="about" id="about">
@@ -77,17 +95,22 @@
         </div>
         <div class="about__block">
           <picture class="about__img">
+            <source srcset="img/about-m.jpg" media="(max-width: 767px)">
+            <source srcset="img/about-t.jpg" media="(max-width: 992px)">
+            <source srcset="img/about-lp.jpg" media="(max-width: 1200px)">
             <source srcset="img/about-d.jpg" media="(max-width: 1920px)">
+            <source srcset="img/about-2x.jpg" media="(min-width: 1921px)">
             <img src="img/about-d.jpg" alt="Изображение Фотоаппарата на белом фоне">
           </picture>
           <form class="about__form form">
             <h3 class="title form__title">Подписаться на&nbsp;рассылку</h3>
-
-            <label class="form__input-label">
-              <input class="form__input" id="email-newsletter" type="email" name="email-newsletter" placeholder="Email">
-              <span class="form__err-label">Недопустимый&nbsp;формат</span>
-            </label>
-            <button class="btn form__btn" type="submit">Отправить</button>
+            <div class="form__line">
+              <label class="form__input-label">
+                <input class="form__input" id="email-newsletter" type="email" name="email-newsletter" placeholder="Email">
+                <span class="form__err-label" aria-hidden="true">Недопустимый&nbsp;формат</span>
+              </label>
+              <button class="btn form__btn" type="submit">Отправить</button>
+            </div>
           </form>
         </div>
       </div>
@@ -101,8 +124,12 @@
             <article class="article projects__article article_small">
               <span class="tag article__tag">#пейзаж</span>
               <picture class="article__img">
-                <source srcset="img/projects-1d.jpg" media="(max-width: 1920px)">
-                <img src="img/projects-1d.jpg" alt="Горный пейзаж">
+                <source srcset="img/projects/projects-1-m.jpg" media="(max-width: 767px)">
+                <source srcset="img/projects/projects-1-t.jpg" media="(max-width: 992px)">
+                <source srcset="img/projects/projects-1-lp.jpg" media="(max-width: 1200px)">
+                <source srcset="img/projects/projects-1-d.jpg" media="(max-width: 1920px)">
+                <source srcset="img/projects/projects-1-2x.jpg" media="(min-width: 1921px)">
+                <img src="img/projects/projects-1-d.jpg" alt="Горный пейзаж">
               </picture>
               <a class="article__link" href="#">
                 <h3 class="title article__title">
@@ -117,8 +144,12 @@
             <article class="article projects__article article_small">
               <span class="tag article__tag">#портрет</span>
               <picture class="article__img">
-                <source srcset="img/projects-2d.jpg" media="(max-width: 1920px)">
-                <img src="img/projects-2d.jpg" alt="Фото мужчины в профиль">
+                <source srcset="img/projects/projects-2-m.jpg" media="(max-width: 767px)">
+                <source srcset="img/projects/projects-2-t.jpg" media="(max-width: 992px)">
+                <source srcset="img/projects/projects-2-lp.jpg" media="(max-width: 1200px)">
+                <source srcset="img/projects/projects-2-d.jpg" media="(max-width: 1920px)">
+                <source srcset="img/projects/projects-2-2x.jpg" media="(min-width: 1921px)">
+                <img src="img/projects/projects-2-d.jpg" alt="Фото мужчины в профиль">
               </picture>
               <a class="article__link" href="#">
                 <h3 class="title article__title">
@@ -129,15 +160,20 @@
             </article>
           </li>
           <li class="projects__list-item">
-            <article class="article projects__article article_small">
+            <article class="article projects__article article_small article_3">
               <span class="tag article__tag">#предмет</span>
               <picture class="article__img">
-                <source srcset="img/projects-3d.jpg" media="(max-width: 1920px)">
-                <img src="img/projects-3d.jpg" alt="Фотография натюрморта">
+                <source srcset="img/projects/projects-3-m.jpg" media="(max-width: 767px)">
+                <source srcset="img/projects/projects-3-t.jpg" media="(max-width: 992px)">
+                <source srcset="img/projects/projects-3-lp.jpg" media="(max-width: 1200px)">
+                <source srcset="img/projects/projects-3-d.jpg" media="(max-width: 1920px)">
+                <source srcset="img/projects/projects-3-2x.jpg" media="(min-width: 1921px)">
+                <img src="img/projects/projects-3-d.jpg" alt="Фотография натюрморта">
               </picture>
               <a class="article__link" href="#">
                 <h3 class="title article__title">
-                  <span>Равным образом, высокое качество позиционных...</span>
+                  <span>Равным образом, высокое качество позиционных высокотехнологичная концепция общественного
+                    уклада</span>
                 </h3>
               </a>
               <time class="article__date" datetime="05-14">14&nbsp;мая</time>
@@ -168,8 +204,12 @@
             <article class="article projects__article article_middle">
               <span class="tag article__tag">#ретушь</span>
               <picture class="article__img">
-                <source srcset="img/projects-5d.jpg" media="(max-width: 1920px)">
-                <img src="img/projects-5d.jpg" alt="Натюрморт с апельсинами">
+                <source srcset="img/projects/projects-5-m.jpg" media="(max-width: 767px)">
+                <source srcset="img/projects/projects-5-t.jpg" media="(max-width: 992px)">
+                <source srcset="img/projects/projects-5-lp.jpg" media="(max-width: 1200px)">
+                <source srcset="img/projects/projects-5-d.jpg" media="(max-width: 1920px)">
+                <source srcset="img/projects/projects-5-2x.jpg" media="(min-width: 1921px)">
+                <img src="img/projects/projects-5-d.jpg" alt="Натюрморт с апельсинами">
               </picture>
               <a class="article__link" href="#">
                 <h3 class="title article__title">
@@ -184,8 +224,12 @@
             <article class="article projects__article article_middle">
               <span class="tag article__tag">#портрет</span>
               <picture class="article__img">
-                <source srcset="img/projects-6d.jpg" media="(max-width: 1920px)">
-                <img src="img/projects-6d.jpg" alt="Чёрно-белое фото девушки">
+                <source srcset="img/projects/projects-6-m.jpg" media="(max-width: 767px)">
+                <source srcset="img/projects/projects-6-t.jpg" media="(max-width: 992px)">
+                <source srcset="img/projects/projects-6-lp.jpg" media="(max-width: 1200px)">
+                <source srcset="img/projects/projects-6-d.jpg" media="(max-width: 1920px)">
+                <source srcset="img/projects/projects-6-2x.jpg" media="(min-width: 1921px)">
+                <img src="img/projects/projects-6-d.jpg" alt="Чёрно-белое фото девушки">
               </picture>
               <a class="article__link" href="#">
                 <h3 class="title article__title">
@@ -206,15 +250,17 @@
         <h2 class="title contacts__title">Контакты</h2>
         <div class="contacts__place">
           <address class="contacts__panel">
-            <a class="contacts__x" href="#"><svg width="20" height="20">
-              <use href="img/sprite.svg#x"></use>
-            </svg></a>
+            <a class="contacts__x" href="#" aria-label="Закрыть панель с адресом">
+              <svg width="20" height="20">
+                <use href="img/sprite.svg#x"></use>
+              </svg></a>
             <p class="text contacts__name">Студия &laquo;High pass&raquo;</p>
             <p class="text contacts__addr">107045, Москва, Даев переулок, дом&nbsp;41, бизнес-центр &laquo;Даев
-              Плаза&raquo;,
-              этаж&nbsp;8, офис &#8470;&nbsp;82</p>
-            <a class="contacts__phone" href="tel:+749542423532">
+              Плаза&raquo;, этаж&nbsp;8, офис &#8470;&nbsp;82
+            </p>
+            <a class="contacts__phone" href="tel:+749542423532" aria-label="Телефон студии: ">
               +7&nbsp;495 424-23-532</a>
+
           </address>
         </div>
         <form class="form contacts__form">
@@ -223,11 +269,11 @@
             и&nbsp;дату съёмки или&nbsp;другого мероприятия</p>
           <label class="form__input-label">
             <input class="form__input" id="name" type="text" name="name" placeholder="Имя">
-            <span class="form__err-label">Недопустимый&nbsp;формат</span>
+            <span class="form__err-label" aria-hidden="true">Недопустимый&nbsp;формат</span>
           </label>
           <label class="form__input-label">
             <input class="form__input" id="email" type="email" name="email" placeholder="Email">
-            <span class="form__err-label">Недопустимый&nbsp;формат</span>
+            <span class="form__err-label" aria-hidden="true">Недопустимый&nbsp;формат</span>
           </label>
           <textarea class="form__input form__input_textarea" id="comments" name="comments" placeholder="Комментарий"></textarea>
 
@@ -256,12 +302,12 @@
       <div class="footer__right">
         <p class="text footer__text">Больше интересного:</p>
         <div class="footer__social social">
-          <a class="social__link" href="#">
+          <a class="social__link" href="#" aria-label="Страница студии в соцсети одноклассники">
             <svg class="social__img" width="30" height="30">
               <use href="img/sprite.svg#ok"></use>
             </svg>
           </a>
-          <a class="social__link" href="#">
+          <a class="social__link" href="#" aria-label="Страница студии в соцсети вконтакте">
             <svg class="social__img" width="30" height="30">
               <use href="img/sprite.svg#vk"></use>
             </svg>

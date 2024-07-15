@@ -1,0 +1,38 @@
+$fontDefault: 'TTFirsNeue',
+Arial,
+Helvetica,
+sans-serif;
+$fontAccent: Roboto,
+'Franklin Gothic Medium',
+'Arial Narrow',
+sans-serif;
+
+$colorDarkBG: #202020;
+$colorLightBG: #fff;
+
+$colorWhite: #ffffff;
+$colorLight: #cacaca;
+$colorGray: #999999;
+$colorBlack: #202020;
+$colorDarkInput: #4a4a4a;
+$colorLightInput: #e9e9e9;
+
+$colorAccentDef: #ff6e30;
+$colorAccentFocus: #bc572b;
+$colorAccentActive: #ce4307;
+
+$colorAccentFocusBG: #ffd4c1;
+$colorRedOnDark: #f06666;
+$colorRedOnLight: #ff3030;
+
+$colorDarkPanel: rgba(32, 32, 32, 0.85);
+
+$containerWidth: 1390px;
+
+$breakpoints: (laptop: 1200px,
+  tablet: 991px,
+  tablet-mini: 767px,
+  mobile: 575px,
+  mobile-mini: 479px);
+
+

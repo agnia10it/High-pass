@@ -12,8 +12,8 @@ import cleanCSS from 'gulp-clean-css';
 import svgSprite from 'gulp-svg-sprite';
 import image from 'gulp-imagemin';
 import browserSync from 'browser-sync';
-// import terser from 'gulp-terser';
-// import notify from 'gulp-notify';
+import terser from 'gulp-terser';
+import notify from 'gulp-notify';
 import sourceMaps from 'gulp-sourcemaps';
 import {
   deleteSync
